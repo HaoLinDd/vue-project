@@ -1,0 +1,21 @@
+<div>
+  <form @submit.prevent="handleLogin">
+    <div>
+      <label for="username">用户名</label>
+      <input
+        type="text"
+        id="username"
+        v-model="loginForm.username">
+    </div>
+    <div>
+      <label for="password">密码</label>
+      <input
+        type="password"
+        id="password"
+        v-model="loginForm.password">
+    </div>
+    <div>
+      <button>点击登陆</button>
+    </div>
+  </form>
+ </div>
